@@ -32,7 +32,8 @@
               <div class="word_wrap jeff">
                 <h2>Jeff Sydney</h2>
                 <h3>Senior Associate</h3>
-                <p>Estate Planning is a relationship, not a transaction, and that's what Janice values most about her work... <a>Read More</a></p>
+                <p>Estate Planning is a relationship, not a transaction, and that's what Janice values most
+                  about her work... <a @click="handleModal(true)">Read More</a></p>
               </div>
             </div>
           </div>
@@ -42,7 +43,8 @@
               <div class="word_wrap peng">
                 <h2>Peng Li</h2>
                 <h3>Senior Associate</h3>
-                <p>Estate Planning is a relationship, not a transaction, and that's what Janice values most about her work... <a>Read More</a></p>
+                <p>Estate Planning is a relationship, not a transaction, and that's what Janice values most
+                  about her work... <a @click="handleModal(true)">Read More</a></p>
               </div>
             </div>
           </div>
@@ -52,7 +54,8 @@
               <div class="word_wrap janice">
                 <h2>Janice Shen</h2>
                 <h3>Senior Associate</h3>
-                <p>Estate Planning is a relationship, not a transaction, and that's what Janice values most about her work... <a>Read More</a></p>
+                <p>Estate Planning is a relationship, not a transaction, and that's what Janice values most
+                  about her work... <a @click="handleModal(true)">Read More</a></p>
               </div>
             </div>
 
@@ -65,8 +68,8 @@
       <h2 class="second">3 More Reasons to Choose Everwill</h2>
 
       <div class="wrap">
-        <div class="columns">
-          <div class="column is-3">
+        <div class="columns is-centered">
+          <div class="column is-4">
             <div class="reason_wrap">
               <img class="is-hidden-mobile" src="/assets/img/safe.jpg" alt="safe" />
               <img class="is-hidden-tablet" src="/assets/img/mobile-safe.jpg" alt="safe" />
@@ -75,7 +78,7 @@
               <p>We store it for you in a bank-grade vault</p>
             </div>
           </div>
-          <div class="column is-3">
+          <div class="column is-4">
             <div class="reason_wrap">
               <img class="is-hidden-mobile" src="/assets/img/contract.jpg" alt="safe" />
               <img class="is-hidden-tablet" src="/assets/img/mobile-secure-lock.jpg" alt="safe" />
@@ -84,7 +87,7 @@
               <p>Carry your Everwill identification Card in your wallet</p>
             </div>
           </div>
-          <div class="column is-3">
+          <div class="column is-4">
             <div class="reason_wrap">
               <img class="is-hidden-mobile" src="/assets/img/contract_shield.jpg" alt="safe" />
               <img class="is-hidden-tablet" src="/assets/img/mobile-contract.jpg" alt="safe" />
@@ -115,8 +118,8 @@
         </div>
       </div>
     </div>
-    <div class="profile_modal shadow_layer" v-if="false">
-      <img class="close_button" src="/assets/img/close_button.jpg" alt="close button" />
+    <div class="profile_modal shadow_layer" v-if="modalToggle == true">
+      <img class="close_button" src="/assets/img/close_button.jpg" alt="close button" @click="handleModal(false)"/>
       <div class="inner modal_content">
         <img class="profile_pic" src="/assets/img/profile_pic_jeff.jpg" alt="face pic" />
         <h1>Jeff Syndney</h1>
@@ -153,7 +156,7 @@
 
         <div class="education">
           <h2>Education</h2>
-          <ul>
+          <ul class="dashed">
             <li>
               Juris Doctorate degree from Western State College of Law in Orange County, Calforina, 2012
             </li>
@@ -162,12 +165,13 @@
             </li>
             <li>
               Professional Experience
+              <br>
               [<a href="/">pull from resume</a>]
             </li>
           </ul>
         </div>
 
-        <div class="Awards">
+        <div class="awards">
           <h2>Awards</h2>
         </div>
       </div>
@@ -179,12 +183,15 @@
 </template>
 <script type="text/ecmascript-6">
 
-  export default {
+  module.exports = {
     data() {
       return {
-        data: {
-
-        }
+        modalToggle: false
+      }
+    },
+    methods: {
+      handleModal(state) {
+        this.modalToggle = state;
       }
     }
   }
@@ -194,13 +201,16 @@
 
   h1 {
     font-size: 32px;
-    font-weight: 500;
+    color: $black;
   }
   h2 {
     font-size: 12px;
+    font-weight: 700;
+    color: $light-grey;
     &.second {
       font-size: 22px;
       font-weight: 500;
+      color: $black;
     }
     @media screen and (max-width: 768px) {
       font-size: 17px;
@@ -212,6 +222,7 @@
   }
   h3 {
     font-size: 10px;
+    color: $light-grey;
     @media screen and (max-width: 768px) {
       font-size: 16px;
     }
@@ -235,7 +246,8 @@
   .hero-top {
     background-image: url('/assets/img/background_family.jpg');
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: right;
+    background-position-y: 20px;
     padding-top: 2rem;
     padding-bottom: 150px;
     @media screen and (max-width: 768px) {
@@ -254,6 +266,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    h3 {
+      color: $light-black;
+      font-weight: 500;
+      strong {
+        color: $light-black;
+      }
+    }
   }
 //HERO FORM
   .left-side-content {
@@ -262,7 +281,7 @@
     margin-top: 100px;
     h2 {
       margin-top: 1rem;
-      font-weight: 500;
+      font-weight: 700;
     }
     .form {
       margin-top: 1rem;
@@ -271,9 +290,21 @@
         align-items: center;
         justify-content: space-between;
         .button {
-          width: 75%;
           display: flex;
           align-self: flex-start;
+          background-color: $red;
+          padding-left: 2rem;
+          padding-right: 2rem;
+          font-size: 8px;
+          line-height: 1.5;
+          height: 32px;
+          border-radius: 5px;
+        }
+        .input + .input {
+          margin-left: 1rem;
+        }
+        .input + button {
+          margin-left: 1rem;
         }
         h2 {
           text-align: left;
@@ -287,6 +318,15 @@
             height: $mobile-button-height;
             margin-top: 1rem;
           }
+          .input + .input {
+            margin-left: 0rem;
+          }
+          .input + button {
+            margin-left: 0rem;
+          }
+          .button {
+            width: 75%;
+          }
         }
       }
     }
@@ -296,12 +336,13 @@
   }
 //Who We Are
   .who-we-are {
-    padding-top: 3rem;
+    padding-top: 2.5rem;
     padding-bottom: 3rem;
     text-align: left;
     h3 {
       margin-top: 0.5rem;
       max-width: 275px;
+      font-weight: 600;
     }
     @media screen and (max-width: 768px) {
       padding-top: 10rem;
@@ -323,14 +364,30 @@
           width: 300px;
           .word_wrap {
             position: absolute;
-            background-color: white;
+            background-color: $black;
             color: black;
             top: 70%;
             left: 10px;
             max-width: 280px;
             text-align: left;
+            h2 {
+              font-size: 12px;
+              font-weight: 500;
+              color: #ffffff;
+            }
             h3 {
-              margin-top: 0;
+              font-size: 10px;
+              font-weight: 300;
+              margin-top: 0.20rem;
+              color: #ffffff;
+            }
+            p {
+              margin-top: 1rem;
+              font-size: 8px;
+              color: #ffffff;
+              a {
+                color: $red;
+              }
             }
           }
         }
@@ -354,10 +411,32 @@
       padding-right: 2rem;
       .columns {
         justify-content: space-between;
+        .column{
+          &.is-4 {
+            width: 30%;
+            @media screen and (max-width: 768px) {
+              width: 100%;
+            }
+          }
+        }
       }
       .reason_wrap {
         padding-top: 4rem;
-        max-width: 230px;
+        max-width: 275px;
+        h2 {
+          margin-top: 1.5rem;
+          strong {
+            color: $light-dark-grey;
+          }
+          color: $light-dark-grey;
+        }
+        p {
+          margin-top: 0.5rem;
+          line-height: 1.7;
+          max-width: 175px;
+          color: $light-grey;
+          font-weight: 500;
+        }
       }
     }
     @media screen and (max-width: 768px) {
@@ -370,6 +449,9 @@
         .reason_wrap {
           margin: 0 auto;
           padding-top: 100px;
+          p {
+            max-width: none;
+          }
         }
       }
     }
@@ -378,17 +460,28 @@
   .footer_call {
     background-image: url('/assets/img/background_bigfamily.jpg');
     background-repeat: no-repeat;
-    background-position: bottom right;
-    padding-top: 10rem;
+    background-position: right;
+    background-position-y: -10px;
+    padding-top: 90px;
 
     display: flex;
     flex-direction: column;
     .call_now {
       width: 100%;
       text-align: left;
-      padding-bottom:10rem;
+      padding-bottom:14rem;
+      .light-grey {
+        color: $light-grey;
+      }
       button {
+        background-color: $red;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
         margin-top: 2rem;
+        font-size: 8px;
+        line-height: 1.5;
+        height: 32px;
+        border-radius: 5px;
       }
     }
     .bottom_bar {
@@ -398,6 +491,7 @@
       background-image: url('/assets/img/background_mobile_family_bot.jpg');
       background-position-y: 60%;
       padding-top: 0rem;
+      margin-top: 100px;
       .call_now {
         text-align: center;
         padding-bottom: 30rem;
@@ -475,7 +569,7 @@
       }
 
       .inner {
-        max-width: 750px;
+        max-width: 700px;
         h1 {
           margin-bottom: 0.25rem;
           font-size: 24px;
@@ -490,15 +584,62 @@
         p {
           margin-top: 1.5rem;
           font-size: 12px;
+          line-height: 1.7;
         }
         .quote_wrap {
           margin-top: 1.5rem;
           border-left: 1px solid black;
           padding-left: 2rem;
+          padding-right: 12rem;
           h2 {
+            font-style: italic;
             font-size: 16px;
             line-height: 1.5;
+            color: $quote-color;
+            font-weight: 500;
           }
+          @media screen and (max-width: 768px) {
+            padding-right: 0rem;
+          }
+        }
+      }
+      .education {
+        margin-top: 2rem;
+        text-align: left;
+        h2 {
+          font-size: 14px;
+          color: $light-black;
+        }
+        ul {
+          margin-top: 1rem;
+          li {
+            margin-top: 1rem;
+            font-size: 12px;
+            a {
+              color: inherit;
+            }
+          }
+        }
+        ul.dashed {
+          list-style: none;
+          padding-left: 0;
+        }
+
+        ul.dashed > li {
+          margin-left: 6px;
+        }
+
+        /* Prevent nested li's from getting messed up */
+        ul.dashed > li::before {
+          content: "-";
+          margin-left: -6px;
+        }
+      }
+      .awards {
+        margin-top: 2rem;
+        text-align: left;
+        h2 {
+          color: $light-black;
         }
       }
     }
