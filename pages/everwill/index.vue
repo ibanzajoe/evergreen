@@ -115,7 +115,7 @@
         </div>
       </div>
     </div>
-    <div class="profile_modal shadow_layer" v-if="true">
+    <div class="profile_modal shadow_layer" v-if="false">
       <img class="close_button" src="/assets/img/close_button.jpg" alt="close button" />
       <div class="inner modal_content">
         <img class="profile_pic" src="/assets/img/profile_pic_jeff.jpg" alt="face pic" />
