@@ -108,7 +108,65 @@
           <button class="button is-medium is-danger">Contact Us Today</button>
         </div>
       </div>
+      <div class="profile_modal shadow_layer" v-if="modalToggle == true">
+        <img class="close_button" src="/assets/img/close_button.jpg" alt="close button" @click="handleModal(false)"/>
+        <div class="inner modal_content">
+          <img class="profile_pic" src="/assets/img/profile_pic_jeff.jpg" alt="face pic" />
+          <h1>Jeff Syndney</h1>
+          <span>Senior Associate</span>
+          <div class="main_content">
+            <p>Every family has their own story to tell.  The trick is listening for it,
+              and that's how Janice's speciality.</p>
 
+            <div class="quote_wrap">
+              <h2>"Once I understand what is most important to my clients and what keeps
+                them up at night, I can create the best plan for their family," Janice
+                explains.</h2>
+            </div>
+
+            <p>
+              Estate planning is a relationship, not a transaction, and that's what Janice
+              values most about her work: the human connections she forges with her clients.
+              She'll guide you through the decision-making process with compassion and
+              expertise, and tailor a plan to suit your wishes.  She's available whenever
+              you have a question or need to update your plans, and she'll gently steer
+              your family through the necessary steps when the time comes to implement the
+              plan you've created.  Janice's clients also appreciate her ability to simplify
+              complex legal matters and provide a clear understanding of what will happen to
+              their estate after death.
+            </p>
+
+            <p>
+              As mother to a young son herself, Janice understands firsthand how critical it
+              is to plan for your death - and how emotional it can be.  Like all of us, she's
+              uneasy about dying, but she finds purpose in delivering peace of mind to her
+              clients, who can rest easier knowing they've taken care of their loved ones.
+            </p>
+          </div>
+
+          <div class="education">
+            <h2>Education</h2>
+            <ul class="dashed">
+              <li>
+                Juris Doctorate degree from Western State College of Law in Orange County, Calforina, 2012
+              </li>
+              <li>
+                Bachelor of Arts degree in History from the University of California, Los Angeles, 2005
+              </li>
+              <li>
+                Professional Experience
+                <br>
+                [<a href="/">pull from resume</a>]
+              </li>
+            </ul>
+          </div>
+
+          <div class="awards">
+            <h2>Awards</h2>
+          </div>
+        </div>
+
+      </div>
     </div>
     <div class="bottom_bar ">
       <div class="links inner">
@@ -121,65 +179,7 @@
 
       </div>
     </div>
-    <div class="profile_modal shadow_layer" v-if="modalToggle == true">
-      <img class="close_button" src="/assets/img/close_button.jpg" alt="close button" @click="handleModal(false)"/>
-      <div class="inner modal_content">
-        <img class="profile_pic" src="/assets/img/profile_pic_jeff.jpg" alt="face pic" />
-        <h1>Jeff Syndney</h1>
-        <span>Senior Associate</span>
-        <div class="main_content">
-          <p>Every family has their own story to tell.  The trick is listening for it,
-            and that's how Janice's speciality.</p>
 
-          <div class="quote_wrap">
-            <h2>"Once I understand what is most important to my clients and what keeps
-              them up at night, I can create the best plan for their family," Janice
-              explains.</h2>
-          </div>
-
-          <p>
-            Estate planning is a relationship, not a transaction, and that's what Janice
-            values most about her work: the human connections she forges with her clients.
-            She'll guide you through the decision-making process with compassion and
-            expertise, and tailor a plan to suit your wishes.  She's available whenever
-            you have a question or need to update your plans, and she'll gently steer
-            your family through the necessary steps when the time comes to implement the
-            plan you've created.  Janice's clients also appreciate her ability to simplify
-            complex legal matters and provide a clear understanding of what will happen to
-            their estate after death.
-          </p>
-
-          <p>
-            As mother to a young son herself, Janice understands firsthand how critical it
-            is to plan for your death - and how emotional it can be.  Like all of us, she's
-            uneasy about dying, but she finds purpose in delivering peace of mind to her
-            clients, who can rest easier knowing they've taken care of their loved ones.
-          </p>
-        </div>
-
-        <div class="education">
-          <h2>Education</h2>
-          <ul class="dashed">
-            <li>
-              Juris Doctorate degree from Western State College of Law in Orange County, Calforina, 2012
-            </li>
-            <li>
-              Bachelor of Arts degree in History from the University of California, Los Angeles, 2005
-            </li>
-            <li>
-              Professional Experience
-              <br>
-              [<a href="/">pull from resume</a>]
-            </li>
-          </ul>
-        </div>
-
-        <div class="awards">
-          <h2>Awards</h2>
-        </div>
-      </div>
-
-    </div>
   </div>
 
 </template>
