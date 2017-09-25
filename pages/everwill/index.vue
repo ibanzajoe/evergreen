@@ -4,60 +4,72 @@
       <div class="inner">
         <div class="top_bar">
           <img src="/assets/img/logo.jpg" alt="everwill logo" />
-          <h3>Call Us Now <strong>(888) 888-8888</strong></h3>
+          <h3 class="is-hidden-mobile">Call Us Now <strong>(888) 888-8888</strong></h3>
         </div>
         <div class="left-side-content">
           <h1>Attorney-Crafted Wills & Trusts from the Comfort of Your Home</h1>
           <h2>No hourly billing. Unlimited revisions for life.</h2>
-          <form class="form">
+          <form class="form has-text-left">
             <div class="input_button_wrap">
-              <input class="input is-small" placeholder="Name"/>
-              <input class="input is-small" placeholder="Phone" />
-              <button class="button is-small is-danger">Learn More</button>
+              <input class="input " placeholder="Name"/>
+              <input class="input " placeholder="Phone" />
+              <button class="button  is-danger">Learn More</button>
+              <h2 class="is-hidden-tablet callus">Call Us Now <strong>(888) 888-8888</strong></h2>
             </div>
           </form>
         </div>
       </div>
     </div>
-    <div class="who-we-are inner has-text-left">
+    <div class="who-we-are inner">
       <h2 class="second">Who we are</h2>
       <h3>Duo nemore assentior definitionem ut, id appetere verterem mea. Duo aeque iustro elitr cu, duo te diam iriure copiosae.</h3>
 
-      <div class="profile_wrap">
+      <div class="profile_wrap has-text-left">
         <div class="columns">
           <div class="column is-6">
-            <div class="word_wrap">
-              <h2>Jeff Sydney</h2>
-              <h3>Senior Associate</h3>
-              <p>Estate Planning is a relationship, not a transaction, and that's what Janice values most about her work... <a>Read More</a></p>
+            <div class="content_wrap">
+              <img src="/assets/img/mobile-jeff-sydney.jpg" alt="Jeff Sydney" />
+              <div class="word_wrap jeff">
+                <h2>Jeff Sydney</h2>
+                <h3>Senior Associate</h3>
+                <p>Estate Planning is a relationship, not a transaction, and that's what Janice values most about her work... <a>Read More</a></p>
+              </div>
             </div>
           </div>
           <div class="column is-3">
-            <div class="word_wrap">
-              <h2>Peng Li</h2>
-              <h3>Senior Associate</h3>
-              <p>Estate Planning is a relationship, not a transaction, and that's what Janice values most about her work... <a>Read More</a></p>
+            <div class="content_wrap">
+              <img src="/assets/img/mobile-peng-li.jpg" alt="Peng Li" />
+              <div class="word_wrap peng">
+                <h2>Peng Li</h2>
+                <h3>Senior Associate</h3>
+                <p>Estate Planning is a relationship, not a transaction, and that's what Janice values most about her work... <a>Read More</a></p>
+              </div>
             </div>
           </div>
           <div class="column is-3">
-            <div class="word_wrap">
-              <h2>Janice Shen</h2>
-              <h3>Senior Associate</h3>
-              <p>Estate Planning is a relationship, not a transaction, and that's what Janice values most about her work... <a>Read More</a></p>
+            <div class="content_wrap">
+              <img src="/assets/img/mobile-janice-shen.jpg" alt="Janice Shen" />
+              <div class="word_wrap janice">
+                <h2>Janice Shen</h2>
+                <h3>Senior Associate</h3>
+                <p>Estate Planning is a relationship, not a transaction, and that's what Janice values most about her work... <a>Read More</a></p>
+              </div>
             </div>
+
           </div>
         </div>
       </div>
     </div>
 
-    <div class="reason inner has-text-left">
+    <div class="reason inner">
       <h2 class="second">3 More Reasons to Choose Everwill</h2>
 
       <div class="wrap">
         <div class="columns">
           <div class="column is-3">
             <div class="reason_wrap">
-              <img src="/assets/img/safe.jpg" alt="safe" />
+              <img class="is-hidden-mobile" src="/assets/img/safe.jpg" alt="safe" />
+              <img class="is-hidden-tablet" src="/assets/img/mobile-safe.jpg" alt="safe" />
               <h2><strong>Never lose your will</strong></h2>
               <h3></h3>
               <p>We store it for you in a bank-grade vault</p>
@@ -65,7 +77,8 @@
           </div>
           <div class="column is-3">
             <div class="reason_wrap">
-              <img src="/assets/img/contract.jpg" alt="safe" />
+              <img class="is-hidden-mobile" src="/assets/img/contract.jpg" alt="safe" />
+              <img class="is-hidden-tablet" src="/assets/img/mobile-secure-lock.jpg" alt="safe" />
               <h2><strong>Allow doctors' emergency access to your end-of-life wishes</strong></h2>
               <h3></h3>
               <p>Carry your Everwill identification Card in your wallet</p>
@@ -73,7 +86,8 @@
           </div>
           <div class="column is-3">
             <div class="reason_wrap">
-              <img src="/assets/img/contract_shield.jpg" alt="safe" />
+              <img class="is-hidden-mobile" src="/assets/img/contract_shield.jpg" alt="safe" />
+              <img class="is-hidden-tablet" src="/assets/img/mobile-contract.jpg" alt="safe" />
               <h2><strong>Prevent unauthorized access to your will</strong></h2>
               <h3></h3>
               <p>Manage who gets access and when from our online portal</p>
@@ -83,7 +97,7 @@
       </div>
     </div>
 
-    <div class="footer_call has-text-left">
+    <div class="footer_call">
       <div class="call_now inner">
         <h2 class="second">Get started now!</h2>
         <h2 class="second light-grey">Call us at 888-383-7945</h2>
@@ -91,13 +105,73 @@
       </div>
       <div class="bottom_bar ">
         <div class="links inner">
-          <span><small>2017 Everwill. All rights reserved</small></span>
+          <span class="is-hidden-mobile"><small>2017 Everwill. All rights reserved</small></span>
           <a>Privacy Policy</a>
           <a>Terms of Use</a>
           <a>Attorney Advertising</a>
-          <img src="/" alt="logo" />
+          <p><span class="is-hidden-tablet"><small>2017 Everwill. All rights reserved</small></span></p>
+          <img src="/assets/img/mobile-bbb-logo.jpg" alt="logo" />
+
         </div>
       </div>
+    </div>
+    <div class="profile_modal shadow_layer" v-if="true">
+      <img class="close_button" src="/assets/img/close_button.jpg" alt="close button" />
+      <div class="inner modal_content">
+        <img class="profile_pic" src="/assets/img/profile_pic_jeff.jpg" alt="face pic" />
+        <h1>Jeff Syndney</h1>
+        <span>Senior Associate</span>
+        <div class="main_content">
+          <p>Every family has their own story to tell.  The trick is listening for it,
+            and that's how Janice's speciality.</p>
+
+          <div class="quote_wrap">
+            <h2>"Once I understand what is most important to my clients and what keeps
+              them up at night, I can create the best plan for their family," Janice
+              explains.</h2>
+          </div>
+
+          <p>
+            Estate planning is a relationship, not a transaction, and that's what Janice
+            values most about her work: the human connections she forges with her clients.
+            She'll guide you through the decision-making process with compassion and
+            expertise, and tailor a plan to suit your wishes.  She's available whenever
+            you have a question or need to update your plans, and she'll gently steer
+            your family through the necessary steps when the time comes to implement the
+            plan you've created.  Janice's clients also appreciate her ability to simplify
+            complex legal matters and provide a clear understanding of what will happen to
+            their estate after death.
+          </p>
+
+          <p>
+            As mother to a young son herself, Janice understands firsthand how critical it
+            is to plan for your death - and how emotional it can be.  Like all of us, she's
+            uneasy about dying, but she finds purpose in delivering peace of mind to her
+            clients, who can rest easier knowing they've taken care of their loved ones.
+          </p>
+        </div>
+
+        <div class="education">
+          <h2>Education</h2>
+          <ul>
+            <li>
+              Juris Doctorate degree from Western State College of Law in Orange County, Calforina, 2012
+            </li>
+            <li>
+              Bachelor of Arts degree in History from the University of California, Los Angeles, 2005
+            </li>
+            <li>
+              Professional Experience
+              [<a href="/">pull from resume</a>]
+            </li>
+          </ul>
+        </div>
+
+        <div class="Awards">
+          <h2>Awards</h2>
+        </div>
+      </div>
+
     </div>
 
 
@@ -116,7 +190,7 @@
   }
 </script>
 <style lang="scss" rel="stylesheet/scss" scoped>
-
+  @import '~assets/css/variables.scss';
 
   h1 {
     font-size: 32px;
@@ -128,9 +202,19 @@
       font-size: 22px;
       font-weight: 500;
     }
+    @media screen and (max-width: 768px) {
+      font-size: 17px;
+      &.second {
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
   }
   h3 {
     font-size: 10px;
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
   }
   p {
     font-size: 8px;
@@ -143,6 +227,8 @@
     .inner {
       max-width: 790px;
       margin: 0 auto;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   }
 
@@ -152,6 +238,14 @@
     background-position: top right;
     padding-top: 2rem;
     padding-bottom: 150px;
+    @media screen and (max-width: 768px) {
+      background-image: url('/assets/img/background_mobile_family.jpg');
+      background-position: bottom right;
+      padding-bottom: 300px;
+    }
+    @media screen and (max-width: 675px) {
+      padding-bottom: 370px;
+    }
   }
 
 
@@ -176,33 +270,107 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
+        .button {
+          width: 75%;
+          display: flex;
+          align-self: flex-start;
+        }
+        h2 {
+          text-align: left;
+          width: 100%;
+          font-size: 16px;
+        }
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+          max-width: 350px;
+          .input, .button {
+            height: $mobile-button-height;
+            margin-top: 1rem;
+          }
+        }
       }
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
     }
   }
 //Who We Are
   .who-we-are {
     padding-top: 3rem;
     padding-bottom: 3rem;
+    text-align: left;
     h3 {
       margin-top: 0.5rem;
       max-width: 275px;
+    }
+    @media screen and (max-width: 768px) {
+      padding-top: 10rem;
+      text-align: center;
+      h3 {
+        margin-top: 2rem;
+        max-width: none;
+      }
+    }
+    .profile_wrap {
+      padding-top: 3rem;
+      .columns {
+        justify-items: space-between;
+      }
+      .column {
+        overflow-x: hidden;
+        .content_wrap {
+          position: relative;
+          width: 300px;
+          .word_wrap {
+            position: absolute;
+            background-color: white;
+            color: black;
+            top: 70%;
+            left: 10px;
+            max-width: 280px;
+            text-align: left;
+            h3 {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 768px) {
+        padding-top: 5rem;
+        .content_wrap {
+          margin: 0 auto;
+        }
+      }
     }
   }
 
 //Reasons for Everwill
   .reason {
-    padding-top: 3rem;
+    padding-top: 6rem;
     padding-bottom: 3rem;
+    text-align: left;
     .wrap {
-      padding-top: 5rem;
       padding-left: 2rem;
       padding-right: 2rem;
       .columns {
         justify-content: space-between;
       }
       .reason_wrap {
+        padding-top: 4rem;
         max-width: 230px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      h2 {
+        max-width: 280px;
+        margin: 0 auto;
+      }
+      .wrap {
+        .reason_wrap {
+          margin: 0 auto;
+          padding-top: 100px;
+        }
       }
     }
   }
@@ -212,28 +380,163 @@
     background-repeat: no-repeat;
     background-position: bottom right;
     padding-top: 10rem;
+
+    display: flex;
+    flex-direction: column;
+    .call_now {
+      width: 100%;
+      text-align: left;
+      padding-bottom:10rem;
+      button {
+        margin-top: 2rem;
+      }
+    }
     .bottom_bar {
-      margin-top: 10rem;
       background-color: rgba(22, 67, 73, 0.85);
+    }
+    @media screen and (max-width: 768px) {
+      background-image: url('/assets/img/background_mobile_family_bot.jpg');
+      background-position-y: 60%;
+      padding-top: 0rem;
+      .call_now {
+        text-align: center;
+        padding-bottom: 30rem;
+      }
     }
   }
   .bottom_bar {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+
     .links {
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
+      img {
+        padding-left: 0.5rem;
+        @media screen and (max-width: 768px) {
+          position: absolute;
+          bottom: 1rem;
+          right: 1rem;
+          padding-left: 0;
+        }
+
+      }
       span {
         font-size: 9px;
+        padding-right: 0.5rem;
+        color: #ffffff;
       }
       a {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
         font-size: 9px;
+        color: #ffffff;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .links {
+        padding-top: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        a {
+          padding-left: 2rem;
+        }
+        p {
+          margin-top: 0.25rem;
+          padding-left: 2rem;
+          color: $light-grey;
+        }
       }
     }
   }
+
+//Modal Styling
+  .profile_modal {
+    &.shadow_layer {
+      position: fixed;
+      top:0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: #ffffff;
+      text-align: center;
+      padding-top: 5rem;
+      .close_button {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        transform: scale(0.7);
+        cursor: pointer;
+        &:hover{
+          opacity: 0.7;
+        }
+      }
+
+      .inner {
+        max-width: 750px;
+        h1 {
+          margin-bottom: 0.25rem;
+          font-size: 24px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+      .main_content {
+        margin-top: 2rem;
+        text-align: left;
+        p {
+          margin-top: 1.5rem;
+          font-size: 12px;
+        }
+        .quote_wrap {
+          margin-top: 1.5rem;
+          border-left: 1px solid black;
+          padding-left: 2rem;
+          h2 {
+            font-size: 16px;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+  .profile_pic {
+    border-radius: 1000px;
+    transform: scale(0.75);
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </style>
