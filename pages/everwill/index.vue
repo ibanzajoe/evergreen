@@ -114,6 +114,7 @@
               and that's how Janice's speciality.</p>
 
             <div class="quote_wrap">
+              <div class="vertical_line">&nbsp;</div>
               <h2>"Once I understand what is most important to my clients and what keeps
                 them up at night, I can create the best plan for their family," Janice
                 explains.</h2>
@@ -615,12 +616,18 @@
           line-height: 30px;
         }
         .quote_wrap {
-          height: 85px;
           margin-top: 1.5rem;
           margin-bottom: 1.5rem;
-          border-left: 1px solid black;
-          padding-left: 1rem;
           padding-right: 2rem;
+          padding-left: 1rem;
+          position: relative;
+          .vertical_line {
+            position: absolute;
+            top: 10px;
+            bottom: 10px;
+            left: 0;
+            border-left: 1px solid black;
+          }
           h2 {
             font-family: Vollkorn;
             font-style: italic;
@@ -631,7 +638,6 @@
           }
           @media screen and (max-width: 500px) {
             padding-right: 0rem;
-            height: 190px;
             max-width: 380px;
           }
         }
@@ -640,14 +646,18 @@
         margin-top: 2rem;
         text-align: left;
         h2 {
-          font-size: 14px;
+          font-size: 21px;
+          font-family: 'Source Sans Pro';
+          line-height: 1.48;
           color: $light-black;
         }
         ul {
+          font-family: 'Source Sans Pro';
+
           margin-top: 1rem;
           li {
             margin-top: 1rem;
-            font-size: 12px;
+            font-size: 17px;
             a {
               color: inherit;
             }
