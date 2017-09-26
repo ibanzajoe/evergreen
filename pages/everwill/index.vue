@@ -33,7 +33,7 @@
                 <div class="word_wrap jeff">
                   <h2>Jeff Sydney</h2>
                   <h3>Senior Associate</h3>
-                  <p>Estate Planning is a relationship, not a transaction, and that's what Janice values most
+                  <p class="is-hidden-mobile">Estate Planning is a relationship, not a transaction, and that's what Janice values most
                     about her work... <a @click="handleModal(true)">Read More</a></p>
                 </div>
               </div>
@@ -44,8 +44,7 @@
                 <div class="word_wrap peng">
                   <h2>Peng Li</h2>
                   <h3>Senior Associate</h3>
-                  <p>Estate Planning is a relationship, not a transaction, and that's what Janice values most
-                    about her work... <a @click="handleModal(true)">Read More</a></p>
+                  <p class="is-hidden-mobile">Estate Planning is a relationship, not a transaction...<a @click="handleModal(true)">Read More</a></p>
                 </div>
               </div>
             </div>
@@ -55,8 +54,7 @@
                 <div class="word_wrap janice">
                   <h2>Janice Shen</h2>
                   <h3>Senior Associate</h3>
-                  <p>Estate Planning is a relationship, not a transaction, and that's what Janice values most
-                    about her work... <a @click="handleModal(true)">Read More</a></p>
+                  <p class="is-hidden-mobile">Estate Planning is a relationship, not a transaction... <a @click="handleModal(true)">Read More</a></p>
                 </div>
               </div>
 
@@ -70,29 +68,26 @@
 
         <div class="wrap">
           <div class="columns is-centered">
-            <div class="column is-4">
+            <div class="column is-3">
               <div class="reason_wrap">
-                <img class="is-hidden-mobile" src="/assets/img/safe.jpg" alt="safe" />
-                <img class="is-hidden-tablet" src="/assets/img/mobile-safe.jpg" alt="safe" />
-                <h2><strong>Never lose your will</strong></h2>
+                <img src="/assets/img/safe_new.jpg" alt="safe" />
+                <h2 class="second"><strong>Never lose your will</strong></h2>
                 <h3></h3>
                 <p>We store it for you in a bank-grade vault</p>
               </div>
             </div>
-            <div class="column is-4 larger">
-              <div class="reason_wrap">
-                <img class="is-hidden-mobile" src="/assets/img/contract.jpg" alt="safe" />
-                <img class="is-hidden-tablet" src="/assets/img/mobile-secure-lock.jpg" alt="safe" />
-                <h2><strong>Allow doctors' emergency access to your end-of-life wishes</strong></h2>
+            <div class="column is-4">
+              <div class="reason_wrap larger">
+                <img src="/assets/img/contract.jpg" alt="safe" />
+                <h2 class="second"><strong>Allow doctors' emergency access to your end-of-life wishes</strong></h2>
                 <h3></h3>
                 <p>Carry your Everwill identification Card in your wallet</p>
               </div>
             </div>
-            <div class="column is-4">
+            <div class="column is-3">
               <div class="reason_wrap">
-                <img class="is-hidden-mobile" src="/assets/img/contract_shield.jpg" alt="safe" />
-                <img class="is-hidden-tablet" src="/assets/img/mobile-contract.jpg" alt="safe" />
-                <h2><strong>Prevent unauthorized access to your will</strong></h2>
+                <img src="/assets/img/contract.jpg" alt="safe" />
+                <h2 class="second"><strong>Prevent unauthorized access to your will</strong></h2>
                 <h3></h3>
                 <p>Manage who gets access and when from our online portal</p>
               </div>
@@ -109,7 +104,7 @@
         </div>
       </div>
       <div class="profile_modal shadow_layer" v-if="modalToggle == true">
-        <img class="close_button" src="/assets/img/close_button.jpg" alt="close button" @click="handleModal(false)"/>
+        <img class="close_button" src="/assets/img/icon-x.svg" alt="close button" @click="handleModal(false)"/>
         <div class="inner modal_content">
           <img class="profile_pic" src="/assets/img/profile_pic_jeff.jpg" alt="face pic" />
           <h1>Jeff Syndney</h1>
@@ -201,34 +196,33 @@
 <style lang="scss" rel="stylesheet/scss" scoped>
   @import '~assets/css/variables.scss';
 
+
   h1 {
-    font-size: 34px;
-    line-height: 1.2;
+    font-size: 58px;
+    line-height: 1.21;
     color: $black;
+    font-family: Vollkorn;
   }
   h2 {
-    font-size: 16px;
-    font-weight: 700;
-    color: $light-grey;
+    font-size: 24px;
+    opacity: 0.8;
+    font-family: "Source Sans Pro";
+    line-height: 1.71;
+    color: $black;
     &.second {
-      font-size: 24px;
+      opacity: 1;
+      font-family: Vollkorn;
+      font-size: 40px;
       font-weight: 500;
       color: $black;
     }
-    @media screen and (max-width: 768px) {
-      font-size: 18px;
-      &.second {
-        font-size: 26px;
-        font-weight: 600;
-      }
-    }
   }
   h3 {
-    font-size: 14px;
-    color: $light-grey;
-    @media screen and (max-width: 768px) {
-      font-size: 18px;
-    }
+    font-family: "Source Sans Pro";
+    font-size: 19px;
+    color: $black;
+    line-height: 1.47;
+    opacity: 0.6;
   }
   p {
     font-size: 12px;
@@ -236,33 +230,43 @@
 
 
   .main {
-    max-width: 1200px;
+    max-width: 1690px;
     margin: 0 auto;
     .inner {
-      max-width: 790px;
+      max-width: 1176px;
       margin: 0 auto;
-      padding-left: 2rem;
-      padding-right: 2rem;
+      @media screen and (max-width: 768px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+
     }
   }
 
   .hero-top {
-    background-image: url('/assets/img/background_family.jpg');
+    background-image: url('/assets/img/background_family_new.jpg');
     background-repeat: no-repeat;
     background-position: right;
-    background-position-y: 20px;
+    background-position-y: 72px;
+    background-size: 800px 763px;
     padding-top: 2rem;
-    padding-bottom: 150px;
+    padding-bottom: 232px;
     @media screen and (max-width: 768px) {
-      background-image: url('/assets/img/background_mobile_family.jpg');
+      background-image: url('/assets/img/background_family_new.jpg');
       background-position: bottom right;
-      padding-bottom: 300px;
+      background-size: contain;
+      padding-bottom: 760px;
     }
-    @media screen and (max-width: 675px) {
-      padding-bottom: 370px;
+    @media screen and (max-width: 700px) {
+      padding-bottom: 660px;
+    }
+    @media screen and (max-width: 600px) {
+      padding-bottom: 550px;
+    }
+    @media screen and (max-width: 600px) {
+      padding-bottom: 400px;
     }
   }
-
 
 //TOP BAR STYLING
   .top_bar {
@@ -281,10 +285,10 @@
   .left-side-content {
     width: 50%;
     text-align: left;
-    margin-top: 100px;
+    margin-top: 150px;
     h2 {
       margin-top: 1rem;
-      font-weight: 700;
+
     }
     .form {
       margin-top: 1.2rem;
@@ -295,22 +299,22 @@
         .input {
           height: $main-button-height;
           border-radius: 50;
+          font-size: 18px;
+          line-height:2.28;
         }
         .button {
           display: flex;
           align-self: flex-start;
           background-color: $red;
-          padding-left: 2rem;
-          padding-right: 2rem;
-          font-size: 12px;
+          padding-left: 3.5rem;
+          padding-right: 3.5rem;
+          font-size: 18px;
           line-height: 1.5;
           height: $main-button-height;
           border-radius: 5px;
-        }
-        .input + .input {
           margin-left: 1rem;
         }
-        .input + button {
+        .input + .input {
           margin-left: 1rem;
         }
         h2 {
@@ -343,24 +347,23 @@
   }
 //Who We Are
   .who-we-are {
-    padding-top: 2.5rem;
+    padding-top: 105px;
     padding-bottom: 3rem;
     text-align: left;
     h3 {
       margin-top: 0.5rem;
-      max-width: 275px;
-      font-weight: 600;
+      max-width: 405px;
     }
     @media screen and (max-width: 768px) {
-      padding-top: 10rem;
+      padding-top: 7rem;
       text-align: center;
       h3 {
-        margin-top: 2rem;
+        margin-top: 1rem;
         max-width: none;
       }
     }
     .profile_wrap {
-      padding-top: 3rem;
+      padding-top: 2rem;
       .columns {
         justify-items: space-between;
       }
@@ -373,24 +376,29 @@
             position: absolute;
             background-color: $black;
             color: black;
-            top: 70%;
-            left: 10px;
+            top: 55%;
+            left: 22px;
             max-width: 280px;
             text-align: left;
             h2 {
-              font-size: 14px;
+              font-family: Vollkorn;
+              font-size: 24px;
               font-weight: 500;
               color: #ffffff;
             }
             h3 {
-              font-size: 12px;
+              margin-top: 0;
+              font-family: "Source Sans Pro";
+              font-size: 17px;
               font-weight: 300;
-              margin-top: 0.20rem;
+              opacity: 1;
               color: #ffffff;
             }
             p {
-              margin-top: 1rem;
-              font-size: 10px;
+              font-family: "Source Sans Pro";
+              margin-top: 2rem;
+              font-size: 16px;
+              line-height: 1.38;
               color: #ffffff;
               a {
                 color: $red;
@@ -410,7 +418,7 @@
 
 //Reasons for Everwill
   .reason {
-    padding-top: 6rem;
+    padding-top: 137px;
     padding-bottom: 3rem;
     text-align: left;
     .wrap {
@@ -418,51 +426,49 @@
       padding-right: 2rem;
       .columns {
         justify-content: space-between;
-        .column{
-          &.is-4 {
-            width: 30%;
-            &.larger {
-              width: 35%;
-            }
-            @media screen and (max-width: 768px) {
-              width: 100%;
-              &.larger {
-                width: 100%;
-              }
-            }
-          }
-        }
       }
       .reason_wrap {
-        padding-top: 4rem;
-        max-width: 275px;
-        h2 {
+        padding-top: 56px;
+        &.larger {
+          padding-left: 1rem;
+          @media screen and (max-width: 768px) {
+            padding-left: 0;
+          }
+        }
+        img {
+          height: 210px;
+          width: 184px;
+        }
+        h2.second {
+          font-size: 24px;
+          opacity: 0.8;
+          color: $light-black;
           margin-top: 1.5rem;
           strong {
             font-weight: 500;
-            color: $light-dark-grey;
           }
-          color: $light-dark-grey;
         }
         p {
+          font-size: 19px;
           margin-top: 0.5rem;
           line-height: 1.7;
-          max-width: 175px;
-          color: $light-grey;
-          font-weight: 500;
+          max-width: 283px;
+          color: $black;
+          opacity: 0.6;
         }
       }
     }
     @media screen and (max-width: 768px) {
       text-align: center;
       h2 {
+        font-size: 32px;
         max-width: 280px;
         margin: 0 auto;
       }
       .wrap {
         .reason_wrap {
           margin: 0 auto;
-          padding-top: 100px;
+          padding-top: 56px;
           p {
             max-width: none;
           }
@@ -472,35 +478,45 @@
   }
 //Footer Call Now
   .footer_call {
-    background-image: url('/assets/img/background_bigfamily.jpg');
+    background-image: url('/assets/img/background_bigfamily_new.jpg');
     background-repeat: no-repeat;
     background-position: right;
     background-position-y: -10px;
-    padding-top: 75px;
+    background-size: 722px 631px;
+    padding-top: 230px;
 
     display: flex;
     flex-direction: column;
     .call_now {
       width: 100%;
       text-align: left;
-      padding-bottom:14rem;
+      padding-bottom: 210px;
       .light-grey {
-        color: $light-grey;
+        color: $light-black;
+        opacity: 0.5;
+      }
+      h2 {
+        font-size: 40px;
+        line-height: 1.25;
+        @media screen and (max-width: 768px) {
+          font-size: 24px;
+        }
       }
       button {
         background-color: $red;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
         margin-top: 2rem;
-        font-size: 12px;
+        font-size: 18px;
         line-height: 1.5;
         height: $main-button-height;
         border-radius: 5px;
       }
     }
     @media screen and (max-width: 768px) {
-      background-image: url('/assets/img/background_mobile_family_bot.jpg');
-      background-position-y: 85%;
+      background-image: url('/assets/img/background_bigfamily_new.jpg');
+      background-position: bottom right;
+      background-size: contain;
       padding-top: 0rem;
       margin-top: 100px;
       .call_now {
@@ -520,7 +536,7 @@
       align-items: center;
       position: relative;
       img {
-        padding-left: 0.5rem;
+        padding-left: 1rem;
         @media screen and (max-width: 768px) {
           position: absolute;
           bottom: 1rem;
@@ -530,14 +546,13 @@
 
       }
       span {
-        font-size: 9px;
+        font-size: 14px;
         padding-right: 0.5rem;
-        color: #ffffff;
+        color: rgba(255, 255, 255, 0.52);
       }
       a {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        font-size: 9px;
+        padding-left: 1rem;
+        font-size: 14px;
         color: #ffffff;
       }
     }
@@ -584,34 +599,40 @@
         max-width: 700px;
         h1 {
           margin-bottom: 0.25rem;
-          font-size: 24px;
+          font-size: 40px;
         }
         span {
-          font-size: 12px;
+          font-size: 17px;
         }
       }
       .main_content {
         margin-top: 2rem;
         text-align: left;
         p {
+          font-family: 'Source Sans Pro';
           margin-top: 1.5rem;
-          font-size: 12px;
-          line-height: 1.7;
+          font-size: 17px;
+          line-height: 30px;
         }
         .quote_wrap {
+          height: 85px;
           margin-top: 1.5rem;
+          margin-bottom: 1.5rem;
           border-left: 1px solid black;
-          padding-left: 2rem;
-          padding-right: 12rem;
+          padding-left: 1rem;
+          padding-right: 2rem;
           h2 {
+            font-family: Vollkorn;
             font-style: italic;
-            font-size: 16px;
+            font-size: 24px;
             line-height: 1.5;
             color: $quote-color;
             font-weight: 500;
           }
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 500px) {
             padding-right: 0rem;
+            height: 190px;
+            max-width: 380px;
           }
         }
       }
