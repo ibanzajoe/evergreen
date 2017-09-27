@@ -4,7 +4,7 @@
       <div class="hero-top is-fullwidth">
         <div class="inner">
           <div class="top_bar">
-            <img src="/assets/img/logo.jpg" alt="everwill logo" />
+            <img src="/img/logo.jpg" alt="everwill logo" />
             <h3 class="is-hidden-mobile">Call Us Now <strong>(888) 888-8888</strong></h3>
           </div>
           <div class="left-side-content">
@@ -29,7 +29,7 @@
           <div class="columns">
             <div class="column is-6">
               <div class="content_wrap">
-                <img src="/assets/img/mobile-jeff-sydney.jpg" alt="Jeff Sydney" />
+                <img src="/img/mobile-jeff-sydney.jpg" alt="Jeff Sydney" />
                 <div class="word_wrap jeff">
                   <h2>Jeff Sydney</h2>
                   <h3>Senior Associate</h3>
@@ -40,7 +40,7 @@
             </div>
             <div class="column is-3">
               <div class="content_wrap">
-                <img src="/assets/img/mobile-peng-li.jpg" alt="Peng Li" />
+                <img src="/img/mobile-peng-li.jpg" alt="Peng Li" />
                 <div class="word_wrap peng">
                   <h2>Peng Li</h2>
                   <h3>Senior Associate</h3>
@@ -50,7 +50,7 @@
             </div>
             <div class="column is-3">
               <div class="content_wrap">
-                <img src="/assets/img/mobile-janice-shen.jpg" alt="Janice Shen" />
+                <img src="/img/mobile-janice-shen.jpg" alt="Janice Shen" />
                 <div class="word_wrap janice">
                   <h2>Janice Shen</h2>
                   <h3>Senior Associate</h3>
@@ -70,7 +70,7 @@
           <div class="columns is-centered">
             <div class="column is-3">
               <div class="reason_wrap">
-                <img src="/assets/img/safe_new.jpg" alt="safe" />
+                <img src="/img/safe_new.jpg" alt="safe" />
                 <h2 class="second"><strong>Never lose your will</strong></h2>
                 <h3></h3>
                 <p>We store it for you in a bank-grade vault</p>
@@ -78,7 +78,7 @@
             </div>
             <div class="column is-4">
               <div class="reason_wrap larger">
-                <img src="/assets/img/contract.jpg" alt="safe" />
+                <img src="/img/contract.jpg" alt="safe" />
                 <h2 class="second"><strong>Allow doctors' emergency access to your end-of-life wishes</strong></h2>
                 <h3></h3>
                 <p>Carry your Everwill identification Card in your wallet</p>
@@ -86,7 +86,7 @@
             </div>
             <div class="column is-3">
               <div class="reason_wrap">
-                <img src="/assets/img/contract.jpg" alt="safe" />
+                <img src="/img/contract.jpg" alt="safe" />
                 <h2 class="second"><strong>Prevent unauthorized access to your will</strong></h2>
                 <h3></h3>
                 <p>Manage who gets access and when from our online portal</p>
@@ -104,9 +104,9 @@
         </div>
       </div>
       <div class="profile_modal shadow_layer" v-if="modalToggle == true">
-        <img class="close_button" src="/assets/img/icon-x.svg" alt="close button" @click="handleModal(false)"/>
+        <img class="close_button" src="/img/icon-x.svg" alt="close button" @click="handleModal(false)"/>
         <div class="inner modal_content">
-          <img class="profile_pic" src="/assets/img/profile_pic_jeff.jpg" alt="face pic" />
+          <img class="profile_pic" src="/img/profile_pic_jeff.jpg" alt="face pic" />
           <h1>Jeff Syndney</h1>
           <span>Senior Associate</span>
           <div class="main_content">
@@ -171,7 +171,7 @@
         <a>Terms of Use</a>
         <a>Attorney Advertising</a>
         <p><span class="is-hidden-tablet"><small>2017 Everwill. All rights reserved</small></span></p>
-        <img src="/assets/img/mobile-bbb-logo.jpg" alt="logo" />
+        <img src="/img/mobile-bbb-logo.jpg" alt="logo" />
 
       </div>
     </div>
@@ -246,7 +246,7 @@
   }
 
   .hero-top {
-    background-image: url('/assets/img/background_family_new.jpg');
+    background-image: url('/img/background_family_new.jpg');
     background-repeat: no-repeat;
     background-position: right;
     background-position-y: 72px;
@@ -254,7 +254,7 @@
     padding-top: 2rem;
     padding-bottom: 232px;
     @media screen and (max-width: 768px) {
-      background-image: url('/assets/img/background_family_new.jpg');
+      background-image: url('/img/background_family_new.jpg');
       background-position: bottom right;
       background-size: contain;
       padding-bottom: 760px;
@@ -480,7 +480,7 @@
   }
 //Footer Call Now
   .footer_call {
-    background-image: url('/assets/img/background_bigfamily_new.jpg');
+    background-image: url('/img/background_bigfamily_new.jpg');
     background-repeat: no-repeat;
     background-position: right;
     background-position-y: -10px;
@@ -516,7 +516,7 @@
       }
     }
     @media screen and (max-width: 768px) {
-      background-image: url('/assets/img/background_bigfamily_new.jpg');
+      background-image: url('/img/background_bigfamily_new.jpg');
       background-position: bottom right;
       background-size: contain;
       padding-top: 0rem;
