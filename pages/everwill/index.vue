@@ -236,10 +236,11 @@
     .inner {
       max-width: 1176px;
       margin: 0 auto;
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 800px) {
         padding-left: 2rem;
         padding-right: 2rem;
       }
+
 
     }
   }
